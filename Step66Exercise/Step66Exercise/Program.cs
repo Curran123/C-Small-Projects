@@ -19,20 +19,20 @@ namespace Step66Exercise
 
             Console.WriteLine("Put in another number");
             string ainput = Console.ReadLine();
-            int aInput = Convert.ToInt32(input);
+            int aInput = Convert.ToInt32(ainput);
             int total = aInput + 25;
             Console.WriteLine(total);
             Console.ReadLine();
 
             Console.WriteLine("Put in yet another number");
             string binput = Console.ReadLine();
-            int bInput = Convert.ToInt32(input);
+            int bInput = Convert.ToInt32(binput);
             Console.WriteLine(bInput / 12.5);
             Console.ReadLine();
 
             Console.WriteLine("Once more, put in a number");
             string cinput = Console.ReadLine();
-            int cInput = Convert.ToInt32(input);
+            int cInput = Convert.ToInt32(cinput);
             if (cInput > 50)
             {
                 Console.WriteLine("True");
@@ -45,7 +45,7 @@ namespace Step66Exercise
 
             Console.WriteLine("'Knock Knock,' 'Who's There?' 'ANOTHER NUMBER PLEASE'");
             string dinput = Console.ReadLine();
-            int dInput = Convert.ToInt32(input);
+            int dInput = Convert.ToInt32(dinput);
             Console.WriteLine(dInput / 7);
             Console.ReadLine();
             Console.WriteLine(dInput % 7);
