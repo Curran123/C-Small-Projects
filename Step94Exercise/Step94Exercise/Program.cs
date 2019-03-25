@@ -17,7 +17,20 @@ namespace Step94Exercise
             string guess = Convert.ToString(Console.ReadLine());
             bool GuessedColor = guess == "cyan";
 
-            do //execute no matter what
+            bool oneofthreecolors = guess == "purple";
+
+            while (!oneofthreecolors);
+            switch (guess)
+                {
+                    case "purple":
+                        Console.WriteLine("Why would you even suggest that color? Please try again.");
+                        Console.WriteLine("Guess a color.");
+                        guess = Convert.ToString(Console.ReadLine());
+                        break;
+                }
+
+
+            do //execute no matter what at least once
             {
                 switch (guess)
                 {
@@ -57,12 +70,20 @@ namespace Step94Exercise
                         break;
                 }
             }
-            while (!GuessedColor); //execute while that which is in the parentheses is true
+            while (!GuessedColor); //execute while that which is in the parentheses is true, and then go back to "do" only if the condition is true
+                
+                    Console.Read();
+                
 
-            Console.Read();
+            
         }
     }
 }
+            
+        
+    
+
+            
     
 
 
