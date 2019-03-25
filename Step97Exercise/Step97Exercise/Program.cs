@@ -11,8 +11,11 @@ namespace Step97Exercise
         static void Main(string[] args)
         {
 
-            StringBuilder sb = new StringBuilder("MY", 10);
-            sb.Append(new char[] { 'N', 'A', 'M', 'E', 'I', 'S' });
+            StringBuilder sb = new StringBuilder("My ");
+            sb.Append("Name ");
+            sb.Append("For Your Reference ");
+            sb.Append(", and please remember it ");
+            sb.Append("is ");
             Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
 
 
@@ -27,7 +30,7 @@ namespace Step97Exercise
 
 
 
-            string lower = "peter" + "curran" + "o'meara";
+            string lower = (firstName) + " " + (middleName) + " " + (lastName);
             Console.WriteLine(lower.ToUpper());
             Console.ReadLine();
             
