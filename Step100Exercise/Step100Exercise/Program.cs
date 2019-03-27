@@ -10,49 +10,48 @@ namespace Step100Exercise
     {
         static void Main(string[] args)
         {
-            //Step 1.
+            //STEP 1.
 
-            string[] gamegenres = new string[10];
+            string[] gamegenres = new string[4];
             gamegenres[0] = "JRPG";
             gamegenres[1] = "Turn-based strategy";
             gamegenres[2] = "RTS";
             gamegenres[3] = "FPS";
-            Console.WriteLine("Array 1: " + gamegenres[0]);
-            Console.WriteLine("Array 1: " + gamegenres[1]);
-            Console.WriteLine("Array 1: " + gamegenres[2]);
-            Console.WriteLine("Array 1: " + gamegenres[3]);
+            Console.WriteLine(0);
+            Console.WriteLine(1);
+            Console.WriteLine(2);
+            Console.WriteLine(3);
             
 
-            Console.WriteLine("Please select an index from the array");
+            Console.WriteLine("Please select an index from the array 0-3");
             string gamearrayinput = Console.ReadLine();
-            string gamearrayInput = Convert.ToString(gamearrayinput);
-
-            Console.WriteLine("You selected " + (gamearrayInput));
-            Console.ReadLine();
-
-            bool gamegenrefound = false; 
-            for (int i = 0; i < gamegenres.Length; i++) // i is the current spot on the array we are looking at.
+            int gamearrayInput = Convert.ToInt32(gamearrayinput);
+            if (gamearrayInput < 0 || gamearrayInput > 3)
             {
-                if (gamearrayinput == gamegenres[i]) //Check if input matches the current array index.
+                Console.WriteLine("That is incorrect. Please select another number.");
+                gamearrayinput = Console.ReadLine();
+                gamearrayInput = Convert.ToInt32(gamearrayinput);
+            }
+
+
+            //Trying to establish a variable analogous to "i" below. 
+            bool selection = false;
+            for (int m = 0; m <= gamegenres.Length-1; m++)
+            {
+                if (gamegenres[gamearrayInput] == gamegenres[m])
                 {
-                    Console.WriteLine("Great!");
+                    Console.WriteLine("You selected " + gamegenres[m]);
                     Console.ReadLine();
-                    gamegenrefound = true;
+                    Console.WriteLine("Great");
+                    Console.ReadLine();
+                    selection = true;
                 }
-                
-                
 
             }
 
-            if (gamegenrefound == false)
-            {
-                Console.WriteLine("That is not a index. Please enter an appropriate answer");
-                Console.ReadLine();
-            }
 
 
-
-            //Step 2.
+            //STEP 2.
 
             Console.WriteLine("Moving onto the second array.");
             Console.ReadLine();
@@ -63,47 +62,42 @@ namespace Step100Exercise
             agenumArray[2] = 15;
             agenumArray[3] = 18;
 
-            Console.WriteLine(agenumArray[0]);
-            Console.WriteLine(agenumArray[1]);
-            Console.WriteLine(agenumArray[2]);
-            Console.WriteLine(agenumArray[3]);
-            Console.ReadLine();
+            Console.WriteLine(0);
+            Console.WriteLine(1);
+            Console.WriteLine(2);
+            Console.WriteLine(3);
+
 
             //alternate way
             //int[] agenumArray = new int[] { 6, 9, 15, 18 };
 
-
             Console.WriteLine("Please select an index from the array"); //Need to convert agearrayinput from a string to an integer.
             string agearrayinput = Console.ReadLine();
             int agearrayInput = Convert.ToInt32(agearrayinput);
+            if (agearrayInput < 0 || agearrayInput > 3)
+            {
+                Console.WriteLine("That is incorrect. Please select another number.");
+                agearrayinput = Console.ReadLine();
+                agearrayInput = Convert.ToInt32(agearrayinput);
+            }
+
+            bool choice = false;
+            for (int j = 0; j <= gamegenres.Length-1; j++)
+            {
+                if (agenumArray[agearrayInput] == agenumArray[j])
+                {
+                    Console.WriteLine("You selected " + agenumArray[j]);
+                    Console.ReadLine();
+                    Console.WriteLine("Wonderful");
+                    Console.ReadLine();
+                    choice = true;
+                }
+                
+            }
             
 
 
-            Console.WriteLine("You selected " + (agearrayinput));
-            Console.ReadLine();
-
-            bool agenumfound = false;
-            for (int i = 0; i < agenumArray.Length; i++)
-            {
-                if (agearrayInput == agenumArray[i]) 
-                {
-                    Console.WriteLine("Wonderful!");
-                    Console.ReadLine();
-                    agenumfound = true;
-                }
-
-            }
-            if (agenumfound == false)
-            {
-                Console.WriteLine("That is not an index. Please enter an appropriate answer");
-                Console.ReadLine();
-
-            }
-
-
-
-
-            //Step 4.
+            //STEP 4.
 
             Console.WriteLine("Moving onto the third array.");
             Console.ReadLine();
@@ -113,40 +107,38 @@ namespace Step100Exercise
             intList.Add("Ingrid");
             intList.Add("Dahlia");
             
-
-            Console.WriteLine(intList[0]);
-            Console.WriteLine(intList[1]);
-            Console.WriteLine(intList[2]);
-            Console.ReadLine();
-
+            Console.WriteLine(0);
+            Console.WriteLine(1);
+            Console.WriteLine(2);
+           
             Console.WriteLine("Please select a string from the list");
             string listarrayinput = Console.ReadLine();
-            string listarrayInput = Convert.ToString(listarrayinput);
-
-            Console.WriteLine("You selected " + (listarrayinput));
-            Console.ReadLine();
-
-            
-
-            bool listarrayfound = false;
-            for (int i = 0; i < intList.Count; i++) //For lists use "count" not "length".
+            int listarrayInput = Convert.ToInt32(listarrayinput);
+            if (listarrayInput < 0 || agearrayInput > 3)
             {
-                if (listarrayInput == intList[i])
+                Console.WriteLine("I didn't realize you had that sort of taste in names.");
+                listarrayinput = Console.ReadLine();
+                listarrayInput = Convert.ToInt32(listarrayinput);
+            }
+
+            bool decision = false;
+            for (int r = 0; r <= intList.Count-1; r++)
+            {
+                if (intList[listarrayInput] == intList[r]); 
                 {
-
-                    Console.WriteLine("One of many good choices!");
+                    Console.WriteLine("You selected " + intList[r]);
                     Console.ReadLine();
-                    listarrayfound = true;
+                    Console.WriteLine("One of many fine choices!");
+                    Console.ReadLine();
+                    decision = true;
+                    Environment.Exit(0);
                 }
+
             }
-            if (listarrayfound == false)
-            {
-                Console.WriteLine("I didn't realize you has that sort of taste in names...");
-                Console.ReadLine();
-                Console.WriteLine("Please try another");
-                Console.ReadLine();
-            }
-            
+
+
+
+           
         }
     }
 }

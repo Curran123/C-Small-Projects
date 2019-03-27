@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step101Video", "Step101Video\Step101Video.csproj", "{2CE360A1-855D-4ADE-B07D-DAD6AF1AB045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CE360A1-855D-4ADE-B07D-DAD6AF1AB045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE360A1-855D-4ADE-B07D-DAD6AF1AB045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE360A1-855D-4ADE-B07D-DAD6AF1AB045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE360A1-855D-4ADE-B07D-DAD6AF1AB045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {142745FD-B77C-4926-8CB2-AEF107D3A85D}
+	EndGlobalSection
+EndGlobal
