@@ -122,32 +122,79 @@ namespace Step103Exercise
             UnitsList.Add("Submersibles");
             UnitsList.Add("Aircraft");
             UnitsList.Add("Artillery");
+            Console.WriteLine("Infantry");
+            Console.WriteLine("Cavalry");
+            Console.WriteLine("Artillery");
+            Console.WriteLine("Submersibles");
+            Console.WriteLine("Aircraft");
+            Console.WriteLine("Artillery");
 
-            Console.WriteLine("Please search for your preferred unit");
-            string y = Console.ReadLine();
 
-            bool foundduplicate = false;
-            foreach (string t in UnitsList)
+            int count = 0;
+
+            Console.WriteLine("Please select your desired unit");
+            String c = Console.ReadLine();
+            
+            if (!UnitsList.Contains(c))
             {
-                if (y == UnitsList.)
-                {
-                    
-                  
-                   
-                    Console.WriteLine(t);
-                    Console.WriteLine("The repeat is " + (t));
-                    Console.WriteLine("The positions of this unit are " + UnitsList.IndexOf(t));
-                    foundduplicate = true;
-
-                }
-            }
-            if (foundduplicate == false)
-            {
-                Console.WriteLine("No duplicates found");
+                Console.WriteLine("That unit does not appear");
             }
             Console.ReadLine();
 
+            foreach (string val in UnitsList)
+            {
+                foreach (string v in UnitsList)
+                {
+                    if ((val == v) && (UnitsList.IndexOf(val)!=UnitsList.LastIndexOf(v)) && ((UnitsList.IndexOf(val) < UnitsList.LastIndexOf(v))))
+                    {
+                        Console.WriteLine("\n" + val);
+                        Console.WriteLine("\nThis duplicate string appears at: " + UnitsList.IndexOf(v) + " and: " + UnitsList.LastIndexOf(v));
+                        count++;
+                        break;
+                    }
+                }   
+            }            
+
+
+            Console.WriteLine("\nThere were " + (count / 2) + "duplicates.");
+            Console.ReadLine();
+
+
+
+            Console.WriteLine("Moving onto the last step");
+            Console.ReadLine();
+
+            //STEP 11.
+            //Create a List of strings that has at least two identical strings in the List. 
+            //Create a foreach loop that evaluates each item in the list, 
+            //and displays a message showing the string and whether or not it has already appeared in the list.
+
+            List<string> genres = new List<string>();
+            genres.Add("Steampunk");
+            genres.Add("Dieselpunk");
+            genres.Add("Cyberpunk");
+            genres.Add("Dieselpunk");
+
+            int tally = 0;
+
+            
+            foreach (string val in genres)
+            {
+                foreach (string g in genres)
+                {
+                    if ((val == g) && (genres.IndexOf(val)!=genres.LastIndexOf(g)) && ((genres.IndexOf(val) < genres.LastIndexOf(g))))
+                    {
+                        Console.WriteLine("\n" + val);
+                        Console.WriteLine("\nThis genre appears at: " + genres.IndexOf(g) + " and: " + genres.LastIndexOf(g));
+                        tally++;
+                        break;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nThere were " + (count / 2) + "duplicates");
+            Console.ReadLine();
         }
-        
+
     }
 }
