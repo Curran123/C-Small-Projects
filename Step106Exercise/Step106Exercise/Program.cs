@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//ABOVE ARE LIBRARIES IN USE.  
+
 namespace Step106Exercise
 {
     class Program
@@ -17,13 +19,13 @@ namespace Step106Exercise
 
 
             List<int> Numbers = new List<int>();
-            Numbers.Add(0);
-            Numbers.Add(1);
-            Numbers.Add(2);
-            Numbers.Add(3);
+            Numbers.Add(20);
+            Numbers.Add(18);
+            Numbers.Add(16);
+            Numbers.Add(14);
+            Numbers.Add(12);
+            Numbers.Add(10);
             Numbers.Add(4);
-            Numbers.Add(5);
-            Numbers.Add(6);
 
             //Console.WriteLine(0);
             //Console.WriteLine(1);
@@ -32,30 +34,40 @@ namespace Step106Exercise
             //Console.WriteLine(4);
             //Console.WriteLine(5);
             //Console.WriteLine(6);
-            List<int> Numbers2 = new List<int>(); //Second List
+
             Console.WriteLine("Please select a number to divide each other number by");
-            int count = 0;
-            String n = Console.ReadLine();
-            int z = Convert.ToInt32(n);
-            
 
-            foreach (int s in Numbers)
+            //string n = Console.ReadLine();
+            try {
+                int z = Convert.ToInt32(Console.ReadLine()); //Whatever user enters, immediately convert it to an integer
+                                                             //and set it to "z". You don't need "n" above
 
-            {
 
-                Numbers2.Add(s / z);
-                Console.WriteLine(s);
 
+
+                try
+                {
+                    foreach (int s in Numbers) { //"s" creates a variable to iterate with
+
+
+
+                        Console.WriteLine(s / z);
+
+                    }
+                    Console.ReadLine();
+                }
+                catch (DivideByZeroException ex)
+                {
+                    Console.WriteLine("You cannot enter zero");
+
+                }
+                Console.ReadLine();
             }
-            foreach (int s in Numbers2)
-
+            catch (FormatException ex)
             {
-
-               
-                Console.WriteLine(s);
-
+                Console.WriteLine("You cannot enter a string");
+                Console.ReadLine();
             }
-            Console.ReadLine();
-        }
+        }   
     }
 }
