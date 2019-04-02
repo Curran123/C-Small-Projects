@@ -8,13 +8,16 @@ namespace Step113Exercise
 {
     public class Void
     {
-        public int VoidMethod(out int num1, int num2)
+        public void VoidMethod(int num1, int num2) //void means nothing is returned.
         {
             int result;
-            num1 = 8;
-            num2 = 5;
-            result = 2 * num1;
-            return num2;
+            result = num1 * num2;
+            Console.WriteLine(num2);
+            Console.WriteLine(result);
+
+            //"return" vs. "display"
+            //return must use "return" keyword, whereas "display" means
+            //you can use Console.WriteLine
         }
     }
 }
