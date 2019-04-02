@@ -8,13 +8,14 @@ namespace Step111Exercise
 {
     public class Multiply
     {
-        int l = Convert.ToInt32(Console.ReadLine());
+        //int l = Convert.ToInt32(Console.ReadLine());
+
         public int  MultiplyOne(int num1) //Method 1
         {
           
             int result;
-            num1 = 6;
-            result = (num1 * l);
+            
+            result = (num1 * 6);
             return result;
             
         }
@@ -22,16 +23,16 @@ namespace Step111Exercise
         {
             
             int result;
-            num2 = 10;
-            result = (num2 * l);
+            
+            result = (num2 * 10);
             return result;
         }
         public int MultiplyThree(int num3) //Method 3
         {
            
             int result;
-            num3 = 4;
-            result = (num3 * l);
+            
+            result = (num3 * 4);
             return result;
         }
         

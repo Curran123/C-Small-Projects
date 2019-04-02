@@ -19,13 +19,12 @@ namespace Step111Exercise
             Console.WriteLine("Write a number");
             int l = Convert.ToInt32(Console.ReadLine());//ReadLine litterally reads the line the users inputs.
             
-            Console.ReadLine();
-
+       
 
 
 
             Console.WriteLine("6, 10, 4");
-            Console.WriteLine("What number do you want to do math on? Choose another.");
+            Console.WriteLine("I will now multiply your number by 6, 10, and 4");
        
             
 
