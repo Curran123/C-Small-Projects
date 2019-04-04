@@ -17,7 +17,7 @@ namespace Step111Exercise
 
 
             Console.WriteLine("Write a number");
-            int l = Convert.ToInt32(Console.ReadLine());//ReadLine litterally reads the line the users inputs.
+            int l = Convert.ToInt32(Console.ReadLine());//ReadLine literally reads the line the users inputs.
             
        
 
