@@ -51,10 +51,8 @@ namespace Step110Video //MORE METHODS
         //An "out parameter", rather than returning a value, the method 
         //throws it back to the variable when the method is done.
         public static Deck Shuffle(Deck deck, out int timesShuffled, int times= 1) //If someone does not enter
-            
-            
-            //in a parameter, it will assume it is 1 
-            //If so, you now made that parameter optional.
+        //in a parameter, it will assume it is 1 
+        //If so, you now made that parameter optional.
             
         {
             timesShuffled = 0;

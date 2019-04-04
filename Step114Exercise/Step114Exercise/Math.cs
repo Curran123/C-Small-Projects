@@ -9,6 +9,7 @@ namespace Step114Exercise
     public class Math
     {
         public int MathMethod(int num1)//num 1 is the user's input; "r" is being passed to the parameter num1.
+            //the int before public is the return value.
         {
 
 
