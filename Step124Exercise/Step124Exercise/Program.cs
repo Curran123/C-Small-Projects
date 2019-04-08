@@ -8,10 +8,15 @@ namespace Step124Exercise
 {
     class Program
     {
-
+        
+        
         static void Main(string[] args)
         {
             Employee employee = new Employee();
+            employee.Firstname = ("Sample");
+            employee.Lastname = ("Student");
+
+            
             employee.SayName();
             Console.ReadLine();
         }
