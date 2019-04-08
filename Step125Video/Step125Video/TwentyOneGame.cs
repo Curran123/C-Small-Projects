@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Step125Video
 {
-    public class TwentyOneGame : Game
+    public class TwentyOneGame : Game, IWalkAway
     {
         public override void Play()//Use "override" to get the method ("PLAY" IN "GAME") defined.
         {
@@ -17,6 +17,10 @@ namespace Step125Video
             Console.WriteLine("21 Players:");
             base.ListPlayers();//Equivalent to what is happening to 
             //"public virtual void ListPlayers()" in "Game".
+        }
+        public void WalkAway(Player player)
+        {
+            throw new NotImplementedException();
         }
     }
 }
