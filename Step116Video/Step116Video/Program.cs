@@ -49,7 +49,7 @@ namespace Step110Video //CLASS METHODS
                 deck.Cards = TempList;
             }
                 //grab a random card, take it out of the deck and put it into a temporary deck
-                //done when deck.Cards.Count is at 0.\
+                //done when deck.Cards.Count is at 0.
                 return deck;
             }
     }   
