@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Step126Exercise
 {
-    class Employee : IQuittable
+    class Employee: IQuittable
     {
         
 
@@ -14,64 +14,28 @@ namespace Step126Exercise
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
 
+        public Employee()//A class constructor
+        {
+            FirstName = ("Bob");
+            MiddleName = ("Jenkins");
+        }
+        public Employee(string x, string y)//A class constructor
+        {
+            FirstName = (x);
+            MiddleName = (y);
+        }
+
         public virtual void Quit()//The Quit Method
         {
-            Console.WriteLine(FirstName  + MiddleName);
+            Console.WriteLine(FirstName + " " + MiddleName);
         }
 
+        
 
 
 
-
-        public class IQuittable//Polymorphism example
-        {
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            //public virtual void Change()
-            //{
-            //    Employee e = new Employee(); //FirstName
-            //    string n = (e.FirstName);
-            //    Employee g = new Employee(); //LastName
-            //    string t = (g.MiddleName);
-
-            //    bool FirstNameOperand()
-            //    {
-            //        int p = Convert.ToInt32(e);
-            //        e = true;
-            //        return true;
-            //    }
-
-            //    if (e & g "{0}")
-
-
-
-
-            //    Console.WriteLine("I like that name!");
-            //}
-
-        }
+        
+        
 
 
 

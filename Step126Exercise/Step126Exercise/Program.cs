@@ -10,9 +10,14 @@ namespace Step126Exercise
     {
         static void Main(string[] args)
         {
-            IQuittable n = new Employee();//POLYMORPHISM: CLASS IS SLIGHTLY DIFFERENT FROM 
+            Console.WriteLine("I will now enter your first and middle names");
+
+            Employee n = new Employee("Zach", "Ahern");//POLYMORPHISM: CLASS IS SLIGHTLY DIFFERENT FROM 
+           
+            
             //THE INTERFACE
             n.Quit();
+            Console.ReadLine();
 
         }
     }
