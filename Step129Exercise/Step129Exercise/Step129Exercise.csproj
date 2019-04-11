@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03316680-86B9-4EA3-8703-3C87D93D4555}</ProjectGuid>
+    <ProjectGuid>{0527F273-9066-4256-AA4F-C9466A685138}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Step127Video</RootNamespace>
-    <AssemblyName>Step127Video</AssemblyName>
+    <RootNamespace>Step129Exercise</RootNamespace>
+    <AssemblyName>Step129Exercise</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="Dealer.cs" />
-    <Compile Include="Deck.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="IWalkAway.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwentyOneGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

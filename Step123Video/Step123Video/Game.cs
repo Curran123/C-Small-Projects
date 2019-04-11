@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Step121_122Videos
 {
-    //We are never going to have an instance of "Game". 
+    //We are never going to have an instance of "Game", 
     //It is always going to be a specific game.
     //Poker, Solitaire, etc. inherit from the game class.
     //"Base" is another word for "abstract".

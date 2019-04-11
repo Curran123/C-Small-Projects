@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03316680-86B9-4EA3-8703-3C87D93D4555}</ProjectGuid>
+    <ProjectGuid>{09850DBE-891F-4AA5-9C7A-42B0AB5839B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Step127Video</RootNamespace>
-    <AssemblyName>Step127Video</AssemblyName>
+    <RootNamespace>Step128Video</RootNamespace>
+    <AssemblyName>Step128Video</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
